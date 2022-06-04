@@ -1,0 +1,29 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Pull') { 
+            steps {
+                git credentialsId: 'gitproject', url: 'https://github.com/Rajendra2999/project.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'echo "Build Successfull"'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test Success!'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo "Deploy Successfull"'
+            }
+        }
+    }
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 595c7d65b705bbb89d4288493d32dec6766f9925
