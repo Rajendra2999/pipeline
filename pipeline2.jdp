@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                git credentialsId: 'gitproject', url: 'https://github.com/Rajendra2999/project.git'
+                git credentialsId: 'gitproject', url: 'https://github.com/Rajendra2999/pipeline.git'
             }
         }
         stage('Build') {
@@ -22,8 +22,3 @@ pipeline {
             }
         }
     }
-}
-<<<<<<< HEAD
-=======
-
->>>>>>> 595c7d65b705bbb89d4288493d32dec6766f9925
